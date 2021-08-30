@@ -1,0 +1,109 @@
+:root {
+  --backgroun-color: #efedf1;
+  --primary-color: #bf99f2;
+  --secondary-color: #d8d1e2;
+  --third-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 2rem;
+  background-color: var(--backgroun-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  min-height: 200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.description {
+  margin: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+h1,
+p {
+  color: var(--third-color);
+}
+
+.label {
+  font-size: 1.3rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.caption {
+  font-size: 1.3rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  height: 50px;
+  display: block;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  display: block;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 1rem auto 0;
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.cash-given-section {
+  display: none;
+  margin-top: 1rem;
+}
+
+.notes-section {
+  display: none;
+}
+
+#error-message {
+  padding-top: 1rem;
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+}
+#output {
+  margin: 0.5rem 0;
+}
+
+#output table,
+th,
+td {
+  padding: 0.2rem;
+  border: 2px solid var(--third-color);
+  border-collapse: collapse;
+}
+
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  word-wrap: break-word;
+}
+
+.buttonNext {
+  margin-bottom: 1rem;
+}
